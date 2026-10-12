@@ -81,7 +81,7 @@ test("asynchronous type conversion works for failures", async () => {
 	const result = await runApp1([
 		"composed",
 		"cat",
-		"https://mock.httpstatus.io/404",
+		"https://mock.httpstatus.codes/status/404",
 	]);
 	expect(result.all).toMatchSnapshot();
 	expect(result.exitCode).toBe(1);
@@ -91,7 +91,7 @@ test("asynchronous type conversion works for success", async () => {
 	const result = await runApp1([
 		"composed",
 		"cat",
-		"https://mock.httpstatus.io/200",
+		"https://mock.httpstatus.codes/status/200",
 	]);
 	expect(result.all).toMatchSnapshot();
 	expect(result.exitCode).toBe(0);

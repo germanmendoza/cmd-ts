@@ -24,14 +24,18 @@ FLAGS:
 exports[`asynchronous type conversion works for failures 1`] = `
 "[31m[1merror: [22m[39mfound [33m1[39m error
 
-  [2msubcmds[22m [2mcomposed[22m [2mcat[22m [31mhttps://mock.httpstatus.io/404[39m
+  [2msubcmds[22m [2mcomposed[22m [2mcat[22m [31mhttps://mock.httpstatus.codes/status/404[39m
 [31m                       [1m^[22m Got status Not Found 404 reading URL[39m
 
 
 [31m[1mhint: [22m[39mfor more information, try '[33msubcmds composed cat --help[39m'"
 `;
 
-exports[`asynchronous type conversion works for success 1`] = `"200 OK"`;
+exports[`asynchronous type conversion works for success 1`] = `
+"200 OK
+
+The request was successfully processed."
+`;
 
 exports[`composes errors 1`] = `
 "[31m[1merror: [22m[39mfound [33m3[39m errors
